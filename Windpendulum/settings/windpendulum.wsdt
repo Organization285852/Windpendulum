@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>widnpendulum/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>212</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>666</ColumnWidth1><ColumnWidth2>177</ColumnWidth2><ColumnWidth3>44</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><ColumnWidth0>21</ColumnWidth0><ColumnWidth1>1306</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9409-8358</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>widnpendulum</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-21935-11398</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-8058-29857</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\IAR\430\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\tarsk.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\tarsk.c</Filename><XPos>0</XPos><YPos>59</YPos><SelStart>2205</SelStart><SelEnd>2205</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\PWM.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>166</SelStart><SelEnd>166</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\PID.c</Filename><XPos>0</XPos><YPos>48</YPos><SelStart>1096</SelStart><SelEnd>1096</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\timerA.c</Filename><XPos>0</XPos><YPos>70</YPos><SelStart>1572</SelStart><SelEnd>1572</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\motor_control.h</Filename><XPos>0</XPos><YPos>54</YPos><SelStart>1405</SelStart><SelEnd>1405</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\PID.h</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>235</SelStart><SelEnd>235</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\timerA.h</Filename><XPos>0</XPos><YPos>7</YPos><SelStart>355</SelStart><SelEnd>355</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\driver\lcd12864.h</Filename><XPos>0</XPos><YPos>7</YPos><SelStart>750</SelStart><SelEnd>750</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>379</SelStart><SelEnd>379</SelEnd></Tab><ActiveTab>10</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\mpu6050\mpu_iic.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>54</SelStart><SelEnd>54</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\driver\lcd12864.c</Filename><XPos>0</XPos><YPos>463</YPos><SelStart>8627</SelStart><SelEnd>8627</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\mpu6050\inv_mpu.c</Filename><XPos>0</XPos><YPos>736</YPos><SelStart>21074</SelStart><SelEnd>21074</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\moudle\motor_control.c</Filename><XPos>0</XPos><YPos>71</YPos><SelStart>2113</SelStart><SelEnd>2113</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-02a1d8b8><key>iaridepm.enu1</key></Toolbar-02a1d8b8></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2><Row3><Sizes/></Row3><Row4><Sizes/></Row4><Row5><Sizes/></Row5><Row6><Sizes/></Row6><Row7><Sizes/></Row7></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>488</Bottom><Right>286</Right><x>-2</x><y>-2</y><xscreen>288</xscreen><yscreen>230</yscreen><sizeHorzCX>210835</sizeHorzCX><sizeHorzCY>335277</sizeHorzCY><sizeVertCX>210835</sizeVertCX><sizeVertCY>714286</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>153</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>155</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>225948</sizeHorzCY><sizeVertCX>210835</sizeVertCX><sizeVertCY>335277</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

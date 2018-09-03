@@ -1,0 +1,1838 @@
+Warning[w6]: Type conflict for external/entry "MPU_Init", in module main against external/entry in module mpu6050; prototyped function vs K&R function
+  /* In module main: */
+  /* K&R Function, args 0, attr 0 */
+  int (__cc_version2 MPU_Init)();
+  /* In module mpu6050: */
+  /* Function, args 0, attr 0 */
+  u8 (__cc_version2 MPU_Init)(void);
+    typedef unsigned char u8;
+Warning[w6]: Type conflict for external/entry "ShowInit", in module main against external/entry in module tarsk; prototyped function vs K&R function
+  /* In module main: */
+  /* K&R Function, args 0, attr 0 */
+  int (__cc_version2 ShowInit)();
+  /* In module tarsk: */
+  /* Function, args 0, attr 0 */
+  void (__cc_version2 ShowInit)(void);
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V5.2.1.11                                          #
+#                                                                              #
+#           Link time     =  20/May/2016  16:31:08                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  F:\IARexample\Windpendulum\Debug\List\widnpendulu #
+#                            m.map                                             #
+#           Output file 1 =  F:\IARexample\Windpendulum\Debug\Exe\widnpendulum #
+#                            .d43                                              #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  F:\IARexample\Windpendulum\Debug\Obj\IIC.r43      #
+#                            F:\IARexample\Windpendulum\Debug\Obj\KEY-16.r43   #
+#                            F:\IARexample\Windpendulum\Debug\Obj\PID.r43      #
+#                            F:\IARexample\Windpendulum\Debug\Obj\PWM.r43      #
+#                            F:\IARexample\Windpendulum\Debug\Obj\inv_mpu.r43  #
+#                            F:\IARexample\Windpendulum\Debug\Obj\inv_mpu_dmp_ #
+#                            motion_driver.r43                                 #
+#                            F:\IARexample\Windpendulum\Debug\Obj\lcd12864.r43 #
+#                            F:\IARexample\Windpendulum\Debug\Obj\main.r43     #
+#                            F:\IARexample\Windpendulum\Debug\Obj\motor_contro #
+#                            l.r43                                             #
+#                            F:\IARexample\Windpendulum\Debug\Obj\mpu6050.r43  #
+#                            F:\IARexample\Windpendulum\Debug\Obj\mpu_iic.r43  #
+#                            F:\IARexample\Windpendulum\Debug\Obj\tarsk.r43    #
+#                            F:\IARexample\Windpendulum\Debug\Obj\timerA.r43   #
+#                            -o                                                #
+#                            F:\IARexample\Windpendulum\Debug\Exe\widnpendulum #
+#                            .d43                                              #
+#                            -l                                                #
+#                            F:\IARexample\Windpendulum\Debug\List\widnpendulu #
+#                            m.map                                             #
+#                            -xeso -ID:\IAR\430\LIB\ -f                        #
+#                            D:\IAR\430\CONFIG\lnk430F1611.xcl (-cmsp430       #
+#                            -QCODE_I=CODE_ID                                  #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,DATA16_HEAP+_D #
+#                            ATA16_HEAP_SIZE=1100-38FF                         #
+#                            -Z(DATA)CODE_I -Z(DATA)CSTACK+_STACK_SIZE#        #
+#                            -Z(CONST)INFO=1000-10FF                           #
+#                            -Z(CONST)INFOA=1080-10FF                          #
+#                            -Z(CONST)INFOB=1000-107F                          #
+#                            -Z(CONST)DATA16_C,DATA16_ID,DIFUNCT,CHECKSUM=4000 #
+#                            -FFDF                                             #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE_ID=4000-FFDF         #
+#                            -P(CODE)CODE=4000-FFDF -Z(CODE)INTVEC=FFE0-FFFF   #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            D:\IAR\430\config\multiplier.xcl                  #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw=?Mul32     #
+#                            -e_Mul64iHw=_Mul64i                               #
+#                            -e_Mul32u32uto64iHw=_Mul32u32uto64i               #
+#                            -e?Mul32fHw=_Mul32f -e_Mul64fHwPtr=_Mul64fPtr)    #
+#                            -D_STACK_SIZE=190 -rt                             #
+#                            D:\IAR\430\LIB\DLIB\dl430fn.r43                   #
+#                            -D_DATA16_HEAP_SIZE=50 -s __program_start         #
+#                            -D_DATA20_HEAP_SIZE=50                            #
+#                                                                              #
+#                           Copyright (C) 1987-2011 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           4DE2  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __core                     = 430
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+       All references to: _Printf
+         were redirected to: _PrintfSmall
+
+                ****************************************
+                *                                      *
+                *              ENTRY LIST              *
+                *                                      *
+                ****************************************
+
+Module  Entry                             Address
+------  -----                             -------
+?FILLER_BYTES
+?ABS_ENTRY_MOD
+        _DATA20_HEAP_SIZE                  0050
+        _DATA16_HEAP_SIZE                  0050
+        _STACK_SIZE                        0190
+IIC ( F:\IARexample\Windpendulum\Debug\Obj\IIC.r43 )
+        P2IN                               0028
+        P2OUT                              0029
+        P2DIR                              002A
+KEY-16 ( F:\IARexample\Windpendulum\Debug\Obj\KEY-16.r43 )
+        WDTCTL                             0120
+        P5IN                               0030
+        P5OUT                              0031
+        P5DIR                              0032
+        switch_1                           114A
+        get_low                            A8A0
+        get_high                           AAA0
+        KYE_value                          8C9A
+PID ( F:\IARexample\Windpendulum\Debug\Obj\PID.r43 )
+        PID_SetPoint                       AEBC
+        PID_SetKp                          AE8A
+        PID_SetKi                          AE80
+        PID_SetKd                          AE76
+        PID_PosLocCalc                     8410
+PWM ( F:\IARexample\Windpendulum\Debug\Obj\PWM.r43 )
+        P4DIR                              001E
+        P4SEL                              001F
+        TBCTL                              0180
+        TBCCTL1                            0184
+        TBCCTL2                            0186
+        TBCCTL3                            0188
+        TBCCTL4                            018A
+        TBCCR0                             0192
+        TBCCR1                             0194
+        TBCCR2                             0196
+        TBCCR3                             0198
+        TBCCR4                             019A
+        PWM_Init                           A1C0
+        PWM_Change                         A974
+        MotorMove                          99CE
+inv_mpu ( F:\IARexample\Windpendulum\Debug\Obj\inv_mpu.r43 )
+        labs                               ADF2
+        reg                                40E7
+        hw                                 4000
+        test                               400C
+        mpu_init                           6F52
+        mpu_lp_accel_mode                  89F0
+        mpu_reset_fifo                     6D74
+        mpu_get_gyro_fsr                   A530
+        mpu_set_gyro_fsr                   9548
+        mpu_get_accel_fsr                  A470
+        mpu_set_accel_fsr                  96DE
+        mpu_get_lpf                        9DAC
+        mpu_set_lpf                        965A
+        mpu_get_sample_rate                ACA0
+        mpu_set_sample_rate                912A
+        mpu_get_gyro_sens                  9F9C
+        mpu_get_accel_sens                 A29A
+        mpu_get_fifo_config                AE6C
+        mpu_configure_fifo                 9A3E
+        mpu_set_sensors                    8F08
+        mpu_read_fifo_stream               8BC0
+        mpu_set_bypass                     785E
+        mpu_set_int_latched                9C9C
+        mpu_run_self_test                  7E64
+        mpu_write_mem                      94BA
+        mpu_read_mem                       942C
+        mpu_load_firmware                  8E40
+        mpu_set_dmp_state                  97E2
+        run_self_test                      861A
+        inv_orientation_matrix_to_scalar   A5A6
+        inv_row_2_scale                    A2E0
+        mget_ms                            AEFC
+        mpu_dmp_init                       880E
+        mpu_dmp_get_data                   5784
+        st                                 1100
+        set_int_enable                     95D2
+        get_accel_prod_shift               81DE
+        accel_self_test                    8516
+        gyro_self_test                     7710
+        get_st_biases                      4E0A
+        gyro_orientation                   1140
+inv_mpu_dmp_motion_driver ( F:\IARexample\Windpendulum\Debug\Obj\inv_mpu_dmp_motion_driver.r43 )
+        dmp_load_motion_driver_firmware    AC8C
+        dmp_set_orientation                72C0
+        dmp_set_gyro_bias                  5E78
+        dmp_set_accel_bias                 6154
+        dmp_set_fifo_rate                  98E0
+        dmp_set_tap_thresh                 710C
+        dmp_set_tap_axes                   A6B6
+        dmp_set_tap_count                  A99E
+        dmp_set_tap_time                   A8CC
+        dmp_set_tap_time_multi             A8F6
+        dmp_set_shake_reject_thresh        A08C
+        dmp_set_shake_reject_time          A94A
+        dmp_set_shake_reject_timeout       A920
+        dmp_enable_feature                 6968
+        dmp_enable_gyro_cal                9FEC
+        dmp_enable_lp_quat                 A4B0
+        dmp_enable_6x_lp_quat              A3B0
+        dmp_read_fifo                      53C4
+        dmp_memory                         412C
+        sStartAddress                      4034
+        dmp                                114C
+        decode_gesture                     9B76
+lcd12864 ( F:\IARexample\Windpendulum\Debug\Obj\lcd12864.r43 )
+        LCD_Show                           8D72
+        LCD_WriteOneNum                    AED8
+        LCD_WriteNums                      66DA
+        LCD_AddrCheck                      907E
+        LCD_Init                           9E02
+        LCD_WriteCmd                       9E56
+        LCD_WriteData                      9EA8
+        LCD_Write_Byte                     A5DE
+main ( F:\IARexample\Windpendulum\Debug\Obj\main.r43 )
+        main                               9AAA
+motor_control ( F:\IARexample\Windpendulum\Debug\Obj\motor_control.r43 )
+        sin                                AEE8
+        P1OUT                              0021
+        FXPID                              1158
+        FYPID                              1174
+        MoveTimeCnt                        1190
+        FX                                 1192
+        FY                                 11D2
+        track1                             1212
+        track2                             1226
+        x                                  123A
+        y                                  123E
+        pitch                              1242
+        roll                               1246
+        yaw                                124A
+        fy                                 1126
+        PINIT                              AC4E
+        TrackControl                       6B8E
+        Mode1Set                           A816
+        Mode2Set                           A64C
+        F_Control                          7D38
+        SetMode1PID                        A03C
+        ymohu                              9CFC
+mpu6050 ( F:\IARexample\Windpendulum\Debug\Obj\mpu6050.r43 )
+        MPU_Init                           926C
+        MPU_Set_Gyro_Fsr                   ADA8
+        MPU_Set_Accel_Fsr                  AD78
+        MPU_Set_LPF                        A36C
+        MPU_Set_Rate                       A326
+        MPU_Write_Len                      9B10
+        MPU_Read_Len                       9958
+        MPU_Write_Byte                     9F4C
+        MPU_Read_Byte                      A430
+mpu_iic ( F:\IARexample\Windpendulum\Debug\Obj\mpu_iic.r43 )
+        MPU_IIC_Delay                      AE3C
+        MPU_IIC_Init                       AD20
+        MPU_IIC_Start                      AB02
+        MPU_IIC_Stop                       AB5C
+        MPU_IIC_Wait_Ack                   A6EA
+        MPU_IIC_Ack                        AB20
+        MPU_IIC_NAck                       AB3E
+        MPU_IIC_Send_Byte                  A682
+        MPU_IIC_Read_Byte                  A3F0
+tarsk ( F:\IARexample\Windpendulum\Debug\Obj\tarsk.r43 )
+        tarsk_100Hz                        9862
+        ShowInit                           A0DA
+        tarsk_50Hz                         642A
+timerA ( F:\IARexample\Windpendulum\Debug\Obj\timerA.r43 )
+        IFG1                               0002
+        P1DIR                              0022
+        TACTL                              0160
+        TACCTL0                            0162
+        TACCR0                             0172
+        BCSCTL1                            0057
+        BCSCTL2                            0058
+        tarsk                              124E
+        ClkInit                            AA38
+        TimerInit                          AC04
+        Timer_A                            9C3C
+        loop                               A20A
+        Timer_A::??INTVEC 12               FFEC
+?Mul32fHw ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?Mul32fHw                          7AD6
+?abort ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?__dbg_break ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __DebugBreak                       AEFA
+?__dwrite ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __dwrite                           AAE2
+?__exit ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __exit                             AC78
+?__write ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __write                            AE54
+?asin ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Dtest                        AA14
+        asin                               9306
+?atan2 ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        atan2                              8ADE
+?_exit ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _exit                              AEF2
+?cppinit ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?cstart ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __program_start                    4DE2
+        ?cstart_begin                      4DE2
+        ?cstart_init_zero                  4DE6
+        ?cstart_init_copy                  4DF2
+        ?cstart_call_main                  4E02
+        ?cstart_end                        4E0A
+lowinit ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?reset_vector ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?reset_vector                      FFFE
+?div64i ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Div64u                            890C
+        _Div64s                            89DC
+?Epilogue ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?Epilogue3                         ACD0
+        ?Epilogue4                         ACCE
+        ?Epilogue5                         ACCC
+        ?Epilogue6                         ACCA
+        ?Epilogue7                         ACC8
+        ?Epilogue8                         ACC6
+?errno ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Errno                        1260
+?exit ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        exit                               AEF6
+?fabsf ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        fabsf                              A254
+?fmod ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        fmod                               7F8E
+?Cast32f32i ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Cast32sto32f                      939A
+        _Cast32uto32f                      93AE
+_Cast32fto32u ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Cast32fto32u                      AE0C
+_Cast32fto32s ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Cast32fto32s                      A752
+?FLT_Extract ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?FLT_Extract                       A174
+?FLT_EQ ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?FLT_EQ                            A7E6
+?FLT_GE ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?FLT_GE                            9D56
+?FLT_LT ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?FLT_LT                            9EFA
+_CmpNe32f ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _CmpNe32f                          AE48
+_CmpGe32f ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _CmpGe32f                          AEA8
+_CmpLt32f ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _CmpLt32f                          AEC6
+_Div32f ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Div32f                            7C08
+_Add32f ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Add32f                            745E
+        _Sub32f                            745A
+?malloc ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?DivMod816u ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?DivMod8u                          AB78
+        ?DivMod16u                         AB7C
+?DivMod816s ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?DivMod8s                          A71E
+        ?DivMod16s                         A722
+?DivMod32u ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?DivMod32u                         A56E
+?DivMod32s ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?DivMod32s                         A4F0
+?ShiftLeft16 ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?ShiftLeft16                       AE24
+?ShiftLeft16_n ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?ShiftLeft16_7                     ADB8
+        ?ShiftLeft16_6                     ADBA
+        ?ShiftLeft16_5                     ADBC
+        ?ShiftLeft16_4                     ADBE
+        ?ShiftLeft16_3                     ADC0
+?ShiftRight16u_n ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?ShiftRight16u_7                   AC1E
+        ?ShiftRight16u_6                   AC22
+        ?ShiftRight16u_5                   AC26
+        ?ShiftRight16u_4                   AC2A
+        ?ShiftRight16u_3                   AC2E
+?ShiftRight64s_n ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?ShiftRight64s_6                   A784
+        ?ShiftRight64s_5                   A78C
+        ?ShiftRight64s_4                   A794
+        ?ShiftRight64s_3                   A79C
+        ?ShiftRight64s_2                   A7A4
+?memchr ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Memchr                       AC38
+?memcmp ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        memcmp                             AAC2
+?memcpy ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        memcpy                             AD32
+?memmove ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?CopyMemoryBytes ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?CopyMemoryBytes                   AD68
+?memset ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        memset                             AD56
+?memzero ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __data16_memzero                   ACD8
+        __data16_memcpy                    AEEE
+?mul64ihw ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Mul64iHw                          8FD0
+?Mul32Hw ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        ?Mul32Hw                           A846
+?printf ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        printf                             ABB0
+?putchar ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        putchar                            A9C6
+?setjmp ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?longjmp ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?sprintf ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        sprintf                            A616
+?sqrt ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Dunscale                     A128
+        sqrt                               8716
+?strchr ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Strchr                       AD88
+?strlen ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        strlen                             ACEA
+?SwitchKey8 ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?SwitchKey16 ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?xatan ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Atan                         75BC
+?xcloseall ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?xdint ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Dint                         9760
+?xdscale ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Dscale                       91D0
+?xgetmemchunk ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?xprintfsmall ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _PrintfSmall                       5B06
+        LoadInt                            9BDA
+        pad                                A7B6
+        _LitobSmall                        799A
+        _PutcharSmall                      AA7E
+        _PutcharsSmall                     A9EE
+?xprout ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _Prout                             AB94
+?xquad ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Quad                         82FE
+?xsin ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        __iar_Sin                          80B6
+?xsprout ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+        _SProut                            AE60
+?xxmemxfree ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+?xxmemxmalloc ( D:\IAR\430\LIB\DLIB\dl430fn.r43 )
+
+
+                ****************************************
+                *                                      *
+                *              CALL GRAPH              *
+                *                                      *
+                ****************************************
+
+  ->Sub-tree of type: Interrupt function tree that does not make
+                    : indirect calls
+                             CSTACK
+    | Stack used (prev) :  00000000
+  01  Timer_A
+      | Stack used (prev) :  00000000
+      | + function block  :  00000004
+  <-Sub-tree of type: Interrupt function tree that does not make
+                    : indirect calls
+    | Stack used          :  00000004
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  __iar_Memchr
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  memcmp
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  memcpy
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  memset
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  __iar_Strchr
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  strlen
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  05          __DebugBreak
+              | Stack used (prev) :  00000004
+              | + function block  :  00000002
+  04        __dwrite
+            | Stack used (prev) :  00000006
+            | + function block  :  0000000A
+  03      __write
+          | Stack used (prev) :  00000010
+          | + function block  :  00000002
+  02    putchar
+        | Stack used (prev) :  00000012
+        | + function block  :  00000006
+  01  _Prout
+      | Stack used (prev) :  00000018
+      | + function block  :  00000006
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  0000001E
+
+
+  ->Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+                             CSTACK
+    | Stack used (prev) :  00000004
+  01  _SProut
+      | Stack used (prev) :  00000004
+      | + function block  :  00000002
+  <-Sub-tree of type: Indirectly called function tree that does not make
+                    : indirect calls (Is not an interrupt and is not flagged
+                    : as not overlayable)
+    | Stack used          :  00000006
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  0000001E
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteData
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  07              LCD_Write_Byte
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  06            LCD_WriteCmd
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+  06            LCD_WriteCmd
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteCmd
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  06            LCD_WriteCmd
+                | Stack used (prev) :  00000020
+                | + function block  :  00000004
+                |  Already listed
+  07              sprintf
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000008
+  07              LCD_WriteData
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  07              LCD_WriteCmd
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  06            Recursive system consisting of
+                | LCD_AddrCheck
+                | LCD_Show
+                | Stack used (prev) :  0000001E
+                | + function block  :  0000001A
+  07              LCD_WriteData
+                  | Stack used (prev) :  00000020
+                  | + function block  :  00000004
+                  |  Already listed
+  06            LCD_WriteOneNum
+                | Stack used (prev) :  00000024
+                | + function block  :  00000002
+  06            LCD_WriteOneNum
+                | Stack used (prev) :  00000024
+                | + function block  :  00000002
+                |  Already listed
+  06            LCD_WriteOneNum
+                | Stack used (prev) :  00000024
+                | + function block  :  00000002
+                |  Already listed
+  05          LCD_WriteNums
+              | Stack used (prev) :  00000038
+              | + function block  :  00000016
+  04        tarsk_100Hz
+            | Stack used (prev) :  0000004E
+            | + function block  :  00000006
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  05          PWM_Change
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  04        MotorMove
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+  05          get_high
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  05          get_low
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  04        KYE_value
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+  03      tarsk_50Hz
+          | Stack used (prev) :  00000054
+          | + function block  :  00000002
+  04        ymohu
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000004
+  04        ymohu
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000004
+            |  Already listed
+  06            __iar_Atan
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000018
+  06            __iar_Dtest
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+  05          atan2
+              | Stack used (prev) :  00000036
+              | + function block  :  0000000E
+  06            __iar_Atan
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000018
+                |  Already listed
+  07              __iar_Dscale
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000006
+  07              __iar_Dunscale
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+  06            sqrt
+                | Stack used (prev) :  00000024
+                | + function block  :  00000010
+  06            __iar_Dtest
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+                |  Already listed
+  05          asin
+              | Stack used (prev) :  00000036
+              | + function block  :  00000010
+  06            decode_gesture
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000008
+  06            mget_ms
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+                        |  Already listed
+  09                  MPU_IIC_NAck
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+                        |  Already listed
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+                        |  Already listed
+  09                  MPU_IIC_Ack
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  08                MPU_IIC_Read_Byte
+                    | Stack used (prev) :  00000022
+                    | + function block  :  00000004
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  08                MPU_IIC_Send_Byte
+                    | Stack used (prev) :  00000020
+                    | + function block  :  00000002
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+                        |  Already listed
+  10                    MPU_IIC_Delay
+                        | Stack used (prev) :  0000001E
+                        | + function block  :  00000002
+                        |  Already listed
+  09                  MPU_IIC_Stop
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  08                MPU_IIC_Wait_Ack
+                    | Stack used (prev) :  00000022
+                    | + function block  :  00000002
+  08                MPU_IIC_Stop
+                    | Stack used (prev) :  00000020
+                    | + function block  :  00000002
+                    |  Already listed
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Delay
+                      | Stack used (prev) :  0000001E
+                      | + function block  :  00000002
+                      |  Already listed
+  08                MPU_IIC_Start
+                    | Stack used (prev) :  00000020
+                    | + function block  :  00000002
+  07              MPU_Read_Len
+                  | Stack used (prev) :  00000026
+                  | + function block  :  0000000A
+  09                  MPU_IIC_Send_Byte
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Wait_Ack
+                      | Stack used (prev) :  00000022
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Stop
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+                      |  Already listed
+  09                  MPU_IIC_Start
+                      | Stack used (prev) :  00000020
+                      | + function block  :  00000002
+                      |  Already listed
+  08                MPU_Write_Len
+                    | Stack used (prev) :  00000024
+                    | + function block  :  0000000A
+  07              mpu_reset_fifo
+                  | Stack used (prev) :  0000002E
+                  | + function block  :  00000004
+  06            mpu_read_fifo_stream
+                | Stack used (prev) :  00000032
+                | + function block  :  0000000C
+  06            mpu_reset_fifo
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  05          dmp_read_fifo
+              | Stack used (prev) :  0000003E
+              | + function block  :  00000042
+  04        mpu_dmp_get_data
+            | Stack used (prev) :  00000080
+            | + function block  :  0000004C
+  04        MotorMove
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  04        PID_PosLocCalc
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000014
+  03      F_Control
+          | Stack used (prev) :  000000CC
+          | + function block  :  0000000A
+  04        asin
+            | Stack used (prev) :  00000036
+            | + function block  :  00000010
+            |  Already listed
+  07              __iar_Dint
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000004
+  08                __iar_Dscale
+                    | Stack used (prev) :  0000001E
+                    | + function block  :  00000006
+                    |  Already listed
+  08                __iar_Dunscale
+                    | Stack used (prev) :  0000001E
+                    | + function block  :  00000002
+                    |  Already listed
+  08                __iar_Dtest
+                    | Stack used (prev) :  0000001E
+                    | + function block  :  00000002
+                    |  Already listed
+  07              fmod
+                  | Stack used (prev) :  00000024
+                  | + function block  :  00000018
+  06            __iar_Quad
+                | Stack used (prev) :  0000003C
+                | + function block  :  00000018
+  06            __iar_Dtest
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+                |  Already listed
+  05          __iar_Sin
+              | Stack used (prev) :  00000054
+              | + function block  :  00000010
+  04        sin
+            | Stack used (prev) :  00000064
+            | + function block  :  00000002
+  04        sin
+            | Stack used (prev) :  00000064
+            | + function block  :  00000002
+            |  Already listed
+  04        PID_SetPoint
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+  03      TrackControl
+          | Stack used (prev) :  00000066
+          | + function block  :  00000018
+  03      mpu_dmp_get_data
+          | Stack used (prev) :  00000080
+          | + function block  :  0000004C
+          |  Already listed
+  02    loop
+        | Stack used (prev) :  000000D6
+        | + function block  :  00000002
+  02    TimerInit
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  02    ClkInit
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  03      Recursive system consisting of
+          | LCD_AddrCheck
+          | LCD_Show
+          | Stack used (prev) :  0000001E
+          | + function block  :  0000001A
+          |  Already listed
+  02    ShowInit
+        | Stack used (prev) :  00000038
+        | + function block  :  00000002
+  03      MPU_IIC_Init
+          | Stack used (prev) :  0000001E
+          | + function block  :  00000002
+  04        MPU_IIC_Read_Byte
+            | Stack used (prev) :  00000022
+            | + function block  :  00000004
+            |  Already listed
+  04        MPU_IIC_Send_Byte
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Wait_Ack
+            | Stack used (prev) :  00000022
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Stop
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Start
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  03      MPU_Read_Byte
+          | Stack used (prev) :  00000026
+          | + function block  :  00000004
+  04        MPU_IIC_Send_Byte
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Wait_Ack
+            | Stack used (prev) :  00000022
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Stop
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_IIC_Start
+            | Stack used (prev) :  00000020
+            | + function block  :  00000002
+            |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  03      MPU_Write_Byte
+          | Stack used (prev) :  00000024
+          | + function block  :  00000006
+          |  Already listed
+  04        MPU_Write_Byte
+            | Stack used (prev) :  00000024
+            | + function block  :  00000006
+            |  Already listed
+  05          MPU_Write_Byte
+              | Stack used (prev) :  00000024
+              | + function block  :  00000006
+              |  Already listed
+  04        MPU_Set_LPF
+            | Stack used (prev) :  0000002A
+            | + function block  :  00000002
+  03      MPU_Set_Rate
+          | Stack used (prev) :  0000002C
+          | + function block  :  00000006
+  03      MPU_Set_Rate
+          | Stack used (prev) :  0000002C
+          | + function block  :  00000006
+          |  Already listed
+  04        MPU_Write_Byte
+            | Stack used (prev) :  00000024
+            | + function block  :  00000006
+            |  Already listed
+  03      MPU_Set_Accel_Fsr
+          | Stack used (prev) :  0000002A
+          | + function block  :  00000002
+  04        MPU_Write_Byte
+            | Stack used (prev) :  00000024
+            | + function block  :  00000006
+            |  Already listed
+  03      MPU_Set_Gyro_Fsr
+          | Stack used (prev) :  0000002A
+          | + function block  :  00000002
+  02    MPU_Init
+        | Stack used (prev) :  00000032
+        | + function block  :  00000002
+  03      PID_SetKd
+          | Stack used (prev) :  0000001E
+          | + function block  :  00000002
+  03      PID_SetKi
+          | Stack used (prev) :  0000001E
+          | + function block  :  00000002
+  03      PID_SetKp
+          | Stack used (prev) :  0000001E
+          | + function block  :  00000002
+  02    SetMode1PID
+        | Stack used (prev) :  00000020
+        | + function block  :  00000002
+  02    Mode2Set
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  02    Mode1Set
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  02    PINIT
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  03      LCD_WriteCmd
+          | Stack used (prev) :  00000020
+          | + function block  :  00000004
+          |  Already listed
+  03      LCD_WriteCmd
+          | Stack used (prev) :  00000020
+          | + function block  :  00000004
+          |  Already listed
+  03      LCD_WriteCmd
+          | Stack used (prev) :  00000020
+          | + function block  :  00000004
+          |  Already listed
+  03      LCD_WriteCmd
+          | Stack used (prev) :  00000020
+          | + function block  :  00000004
+          |  Already listed
+  02    LCD_Init
+        | Stack used (prev) :  00000024
+        | + function block  :  00000002
+  02    Recursive system consisting of
+        | LCD_AddrCheck
+        | LCD_Show
+        | Stack used (prev) :  0000001E
+        | + function block  :  0000001A
+        |  Already listed
+  03      MPU_IIC_Init
+          | Stack used (prev) :  0000001E
+          | + function block  :  00000002
+          |  Already listed
+  05          memset
+              | Stack used (prev) :  00000004
+              | + function block  :  00000002
+              |  Already listed
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+  05          mpu_reset_fifo
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000004
+              |  Already listed
+  04        dmp_enable_6x_lp_quat
+            | Stack used (prev) :  00000036
+            | + function block  :  00000006
+  04        dmp_enable_6x_lp_quat
+            | Stack used (prev) :  00000036
+            | + function block  :  00000006
+            |  Already listed
+  05          memset
+              | Stack used (prev) :  00000004
+              | + function block  :  00000002
+              |  Already listed
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  05          mpu_reset_fifo
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000004
+              |  Already listed
+  04        dmp_enable_lp_quat
+            | Stack used (prev) :  00000036
+            | + function block  :  00000006
+  04        dmp_enable_lp_quat
+            | Stack used (prev) :  00000036
+            | + function block  :  00000006
+            |  Already listed
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_enable_gyro_cal
+            | Stack used (prev) :  00000036
+            | + function block  :  00000014
+  04        dmp_enable_gyro_cal
+            | Stack used (prev) :  00000036
+            | + function block  :  00000014
+            |  Already listed
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_shake_reject_timeout
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_shake_reject_time
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_shake_reject_thresh
+            | Stack used (prev) :  00000036
+            | + function block  :  00000008
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_tap_time_multi
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_tap_time
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_tap_count
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_tap_axes
+            | Stack used (prev) :  00000036
+            | + function block  :  00000004
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  05          mpu_get_accel_fsr
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  04        dmp_set_tap_thresh
+            | Stack used (prev) :  00000036
+            | + function block  :  00000010
+  04        mpu_write_mem
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000008
+            |  Already listed
+  04        mpu_reset_fifo
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000004
+            |  Already listed
+  03      dmp_enable_feature
+          | Stack used (prev) :  0000004A
+          | + function block  :  0000000E
+  04        mpu_write_mem
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000008
+            |  Already listed
+  03      dmp_set_fifo_rate
+          | Stack used (prev) :  00000036
+          | + function block  :  00000018
+  04        memcpy
+            | Stack used (prev) :  00000004
+            | + function block  :  00000002
+            |  Already listed
+  04        mpu_write_mem
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000008
+            |  Already listed
+  03      dmp_set_orientation
+          | Stack used (prev) :  00000036
+          | + function block  :  00000016
+  05          memcmp
+              | Stack used (prev) :  00000004
+              | + function block  :  00000002
+              |  Already listed
+  05          MPU_Write_Len
+              | Stack used (prev) :  00000024
+              | + function block  :  0000000A
+              |  Already listed
+  06            MPU_Read_Len
+                | Stack used (prev) :  00000026
+                | + function block  :  0000000A
+                |  Already listed
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  05          mpu_read_mem
+              | Stack used (prev) :  00000030
+              | + function block  :  00000008
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        mpu_load_firmware
+            | Stack used (prev) :  00000038
+            | + function block  :  00000020
+  03      dmp_load_motion_driver_firmware
+          | Stack used (prev) :  00000058
+          | + function block  :  00000002
+  04        inv_row_2_scale
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+  04        inv_row_2_scale
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+            |  Already listed
+  04        inv_row_2_scale
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+            |  Already listed
+  03      inv_orientation_matrix_to_scalar
+          | Stack used (prev) :  00000020
+          | + function block  :  00000002
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  05          mpu_get_accel_sens
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  04        dmp_set_accel_bias
+            | Stack used (prev) :  00000036
+            | + function block  :  0000002C
+  05          mpu_write_mem
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000008
+              |  Already listed
+  04        dmp_set_gyro_bias
+            | Stack used (prev) :  00000036
+            | + function block  :  0000001A
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  07              MPU_Read_Len
+                  | Stack used (prev) :  00000026
+                  | + function block  :  0000000A
+                  |  Already listed
+  07              MPU_Write_Len
+                  | Stack used (prev) :  00000024
+                  | + function block  :  0000000A
+                  |  Already listed
+  06            mpu_set_bypass
+                | Stack used (prev) :  00000030
+                | + function block  :  00000006
+  07              MPU_Write_Len
+                  | Stack used (prev) :  00000024
+                  | + function block  :  0000000A
+                  |  Already listed
+  08                MPU_Write_Len
+                    | Stack used (prev) :  00000024
+                    | + function block  :  0000000A
+                    |  Already listed
+  07              mpu_set_lpf
+                  | Stack used (prev) :  0000002E
+                  | + function block  :  00000004
+  08                MPU_Write_Len
+                    | Stack used (prev) :  00000024
+                    | + function block  :  0000000A
+                    |  Already listed
+  09                  MPU_Write_Len
+                      | Stack used (prev) :  00000024
+                      | + function block  :  0000000A
+                      |  Already listed
+  08                mpu_set_int_latched
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000006
+  08                mpu_set_int_latched
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000006
+                    |  Already listed
+  09                  mpu_reset_fifo
+                      | Stack used (prev) :  0000002E
+                      | + function block  :  00000004
+                      |  Already listed
+  10                    MPU_Write_Len
+                        | Stack used (prev) :  00000024
+                        | + function block  :  0000000A
+                        |  Already listed
+  09                  set_int_enable
+                      | Stack used (prev) :  0000002E
+                      | + function block  :  00000004
+  09                  set_int_enable
+                      | Stack used (prev) :  0000002E
+                      | + function block  :  00000004
+                      |  Already listed
+  08                mpu_configure_fifo
+                    | Stack used (prev) :  00000032
+                    | + function block  :  00000008
+  08                mpu_set_lpf
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000004
+                    |  Already listed
+  08                mpu_set_lpf
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000004
+                    |  Already listed
+  08                mpu_set_lpf
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000004
+                    |  Already listed
+  08                mpu_set_lpf
+                    | Stack used (prev) :  0000002E
+                    | + function block  :  00000004
+                    |  Already listed
+  07              mpu_lp_accel_mode
+                  | Stack used (prev) :  0000003A
+                  | + function block  :  00000006
+  07              mpu_lp_accel_mode
+                  | Stack used (prev) :  0000003A
+                  | + function block  :  00000006
+                  |  Already listed
+  06            mpu_set_sample_rate
+                | Stack used (prev) :  00000040
+                | + function block  :  00000006
+  06            mpu_reset_fifo
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  06            mpu_reset_fifo
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  06            set_int_enable
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  06            set_int_enable
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  06            set_int_enable
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000004
+                |  Already listed
+  05          mpu_set_dmp_state
+              | Stack used (prev) :  00000046
+              | + function block  :  00000004
+  05          mpu_set_dmp_state
+              | Stack used (prev) :  00000046
+              | + function block  :  00000004
+              |  Already listed
+  07              _Div64u
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  0000001C
+  06            _Div64s
+                | Stack used (prev) :  0000003A
+                | + function block  :  00000004
+  06            MPU_Read_Len
+                | Stack used (prev) :  00000026
+                | + function block  :  0000000A
+                |  Already listed
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  05          get_st_biases
+              | Stack used (prev) :  0000003E
+              | + function block  :  00000028
+  05          get_st_biases
+              | Stack used (prev) :  0000003E
+              | + function block  :  00000028
+              |  Already listed
+  07              __iar_Dtest
+                  | Stack used (prev) :  0000001E
+                  | + function block  :  00000002
+                  |  Already listed
+  06            fabsf
+                | Stack used (prev) :  00000020
+                | + function block  :  00000006
+  06            MPU_Read_Len
+                | Stack used (prev) :  00000026
+                | + function block  :  0000000A
+                |  Already listed
+  06            labs
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+  05          gyro_self_test
+              | Stack used (prev) :  00000030
+              | + function block  :  00000012
+  06            fabsf
+                | Stack used (prev) :  00000020
+                | + function block  :  00000006
+                |  Already listed
+  07              MPU_Read_Len
+                  | Stack used (prev) :  00000026
+                  | + function block  :  0000000A
+                  |  Already listed
+  06            get_accel_prod_shift
+                | Stack used (prev) :  00000030
+                | + function block  :  0000000E
+  06            labs
+                | Stack used (prev) :  0000001E
+                | + function block  :  00000002
+                |  Already listed
+  05          accel_self_test
+              | Stack used (prev) :  0000003E
+              | + function block  :  0000001A
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  06            mpu_set_int_latched
+                | Stack used (prev) :  0000002E
+                | + function block  :  00000006
+                |  Already listed
+  05          mpu_set_sensors
+              | Stack used (prev) :  00000034
+              | + function block  :  00000006
+  05          mpu_configure_fifo
+              | Stack used (prev) :  00000032
+              | + function block  :  00000008
+              |  Already listed
+  05          mpu_get_fifo_config
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  05          mpu_set_sample_rate
+              | Stack used (prev) :  00000040
+              | + function block  :  00000006
+              |  Already listed
+  05          mpu_get_sample_rate
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  05          mpu_set_lpf
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000004
+              |  Already listed
+  05          mpu_get_lpf
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  05          mpu_set_accel_fsr
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000004
+  05          mpu_get_accel_fsr
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+              |  Already listed
+  06            MPU_Write_Len
+                | Stack used (prev) :  00000024
+                | + function block  :  0000000A
+                |  Already listed
+  05          mpu_set_gyro_fsr
+              | Stack used (prev) :  0000002E
+              | + function block  :  00000004
+  05          mpu_get_gyro_fsr
+              | Stack used (prev) :  0000001E
+              | + function block  :  00000002
+  04        mpu_run_self_test
+            | Stack used (prev) :  00000066
+            | + function block  :  0000002E
+  04        mpu_get_accel_sens
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+            |  Already listed
+  04        mpu_get_gyro_sens
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000002
+  03      run_self_test
+          | Stack used (prev) :  00000094
+          | + function block  :  00000020
+  03      mpu_set_dmp_state
+          | Stack used (prev) :  00000046
+          | + function block  :  00000004
+          |  Already listed
+  03      mpu_set_sensors
+          | Stack used (prev) :  00000034
+          | + function block  :  00000006
+          |  Already listed
+  03      mpu_configure_fifo
+          | Stack used (prev) :  00000032
+          | + function block  :  00000008
+          |  Already listed
+  03      mpu_set_sample_rate
+          | Stack used (prev) :  00000040
+          | + function block  :  00000006
+          |  Already listed
+  04        printf
+            | Stack used (prev) :  0000001E
+            | + function block  :  00000004
+  04        memset
+            | Stack used (prev) :  00000004
+            | + function block  :  00000002
+            |  Already listed
+  04        MPU_Read_Len
+            | Stack used (prev) :  00000026
+            | + function block  :  0000000A
+            |  Already listed
+  04        MPU_Write_Len
+            | Stack used (prev) :  00000024
+            | + function block  :  0000000A
+            |  Already listed
+  04        mpu_set_bypass
+            | Stack used (prev) :  00000030
+            | + function block  :  00000006
+            |  Already listed
+  04        mpu_set_sensors
+            | Stack used (prev) :  00000034
+            | + function block  :  00000006
+            |  Already listed
+  04        mpu_configure_fifo
+            | Stack used (prev) :  00000032
+            | + function block  :  00000008
+            |  Already listed
+  04        mpu_set_sample_rate
+            | Stack used (prev) :  00000040
+            | + function block  :  00000006
+            |  Already listed
+  04        mpu_set_lpf
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000004
+            |  Already listed
+  04        mpu_set_accel_fsr
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000004
+            |  Already listed
+  04        mpu_set_gyro_fsr
+            | Stack used (prev) :  0000002E
+            | + function block  :  00000004
+            |  Already listed
+  03      mpu_init
+          | Stack used (prev) :  00000046
+          | + function block  :  00000008
+  02    mpu_dmp_init
+        | Stack used (prev) :  000000B4
+        | + function block  :  00000004
+  02    PWM_Init
+        | Stack used (prev) :  0000001E
+        | + function block  :  00000002
+  01  main
+      | Stack used (prev) :  000000D8
+      | + function block  :  00000002
+  <-Sub-tree of type: Function tree
+    | Stack used          :  000000DA
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  000000DA
+  01  exit
+      | Stack used (prev) :  000000DA
+      | + function block  :  00000002
+  <-Sub-tree of type: Function tree
+    | Stack used          :  000000DC
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  000000DC
+  01  __data16_memzero
+      | Stack used (prev) :  000000DC
+      | + function block  :  00000002
+  <-Sub-tree of type: Function tree
+    | Stack used          :  000000DE
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  000000DE
+  02    memcpy
+        | Stack used (prev) :  00000004
+        | + function block  :  00000002
+        |  Already listed
+  01  __data16_memcpy
+      | Stack used (prev) :  000000DE
+      | + function block  :  00000002
+  <-Sub-tree of type: Function tree
+    | Stack used          :  000000E0
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  000000E0
+  01  _Mul64iHw
+      | Stack used (prev) :  000000E0
+      | + function block  :  00000014
+  <-Sub-tree of type: Function tree
+    | Stack used          :  000000F4
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  000000F4
+  03      _PutcharSmall
+          | Stack used (prev) :  000000F4
+          | + function block  :  00000004
+  02    _PutcharsSmall
+        | Stack used (prev) :  000000F8
+        | + function block  :  00000008
+  02    _PutcharsSmall
+        | Stack used (prev) :  000000F8
+        | + function block  :  00000008
+        |  Already listed
+  02    _PutcharSmall
+        | Stack used (prev) :  000000F4
+        | + function block  :  00000004
+        |  Already listed
+  02    _LitobSmall
+        | Stack used (prev) :  000000F4
+        | + function block  :  00000012
+  02    _LitobSmall
+        | Stack used (prev) :  000000F4
+        | + function block  :  00000012
+        |  Already listed
+  03      _PutcharsSmall
+          | Stack used (prev) :  000000F8
+          | + function block  :  00000008
+          |  Already listed
+  02    pad
+        | Stack used (prev) :  00000100
+        | + function block  :  0000000A
+  02    pad
+        | Stack used (prev) :  00000100
+        | + function block  :  0000000A
+        |  Already listed
+  02    pad
+        | Stack used (prev) :  00000100
+        | + function block  :  0000000A
+        |  Already listed
+  02    LoadInt
+        | Stack used (prev) :  000000F4
+        | + function block  :  00000002
+  02    strlen
+        | Stack used (prev) :  00000004
+        | + function block  :  00000002
+        |  Already listed
+  02    __iar_Strchr
+        | Stack used (prev) :  00000004
+        | + function block  :  00000002
+        |  Already listed
+  02    __iar_Memchr
+        | Stack used (prev) :  00000004
+        | + function block  :  00000002
+        |  Already listed
+  01  _PrintfSmall
+      | Stack used (prev) :  0000010A
+      | + function block  :  00000042
+  <-Sub-tree of type: Function tree
+    | Stack used          :  0000014C
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0002 - 0002               1   rel    0
+                                       001E - 001F               2 
+                                       0021 - 0022               2 
+                                       0028 - 002A               3 
+                                       0030 - 0032               3 
+                                       0057 - 0058               2 
+                                       0120 - 0121               2 
+                                       0160 - 0163               4 
+                                       0172 - 0173               2 
+                                       0180 - 0181               2 
+                                       0184 - 018B               8 
+                                       0192 - 019B               A 
+DATA16_I                               1100 - 1148              49   rel    1
+DATA16_Z                               114A - 1261             118   rel    1
+CSTACK                                 3770 - 38FF             190   rel    1
+DATA16_C                               4000 - 4D96             D97   rel    1
+DATA16_ID                              4D98 - 4DE0              49   rel    1
+CSTART                                 4DE2 - 4E09              28   rel    1
+<CODE> 1                               4E0A - AEFD            60F4   rel    1
+INTVEC                                 FFE0 - FFED               E   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 24 876 bytes of CODE  memory
+    753 bytes of DATA  memory (+ 41 absolute )
+  3 552 bytes of CONST memory
+
+Errors: none
+Warnings: 2
+

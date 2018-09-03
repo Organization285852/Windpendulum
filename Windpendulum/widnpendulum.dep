@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2509438974</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\moudle\motor_control.c</file>
+      <file>$PROJ_DIR$\moudle\PID.h</file>
+      <file>$PROJ_DIR$\driver\lcd12864.h</file>
+      <file>$PROJ_DIR$\moudle\PID.c</file>
+      <file>$PROJ_DIR$\driver\KEY-16.c</file>
+      <file>$PROJ_DIR$\driver\system.h</file>
+      <file>$PROJ_DIR$\driver\lcd12864.c</file>
+      <file>$PROJ_DIR$\moudle\motor_control.h</file>
+      <file>$PROJ_DIR$\driver\KEY-16.h</file>
+      <file>$PROJ_DIR$\moudle\tarsk.c</file>
+      <file>$PROJ_DIR$\moudle\tarsk.h</file>
+      <file>$PROJ_DIR$\mpu6050\dmp_key.h</file>
+      <file>$PROJ_DIR$\mpu6050\dmp_map.h</file>
+      <file>$PROJ_DIR$\mpu6050\inv_mpu.c</file>
+      <file>$PROJ_DIR$\mpu6050\inv_mpu.h</file>
+      <file>$PROJ_DIR$\mpu6050\mpu6050.c</file>
+      <file>$PROJ_DIR$\mpu6050\mpu6050.h</file>
+      <file>$PROJ_DIR$\mpu6050\inv_mpu_dmp_motion_driver.c</file>
+      <file>$PROJ_DIR$\mpu6050\inv_mpu_dmp_motion_driver.h</file>
+      <file>$PROJ_DIR$\mpu6050\mpu_iic.c</file>
+      <file>$PROJ_DIR$\mpu6050\mpu_iic.h</file>
+      <file>$PROJ_DIR$\src\IIC.c</file>
+      <file>$PROJ_DIR$\src\IIC.h</file>
+      <file>$PROJ_DIR$\src\PWM.c</file>
+      <file>$PROJ_DIR$\src\PWM.h</file>
+      <file>$PROJ_DIR$\src\timerA.c</file>
+      <file>$PROJ_DIR$\src\timerA.h</file>
+      <file>$PROJ_DIR$\src\USCI_I2C.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\KEY-16.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\msp430f1611.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\motor_control.r43</file>
+      <file>$PROJ_DIR$\Debug\List\widnpendulum.map</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\PID.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\PID.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\tarsk.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\motor_control.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\tarsk.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\PWM.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\timerA.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\IIC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\IIC.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\timerA.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\PWM.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\msp430g2553.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\mpu6050.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu_dmp_motion_driver.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mpu_iic.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu_dmp_motion_driver.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mpu6050.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mpu_iic.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F1611.xcl</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$PROJ_DIR$\driver\MPU6050.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\widnpendulum.pbd</file>
+      <file>$PROJ_DIR$\Debug\Exe\widnpendulum.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\KEY-16.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd12864.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd12864.r43</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 76 37</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\moudle\motor_control.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 1 24 7 46 33 35 73 65 72 71 70 14 5 44 45 47 2 32 74 69 38 30 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 24 7 46 33 35 73 72 71 70 14 5 44 45 47 2 32 74 69 38 30 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\moudle\PID.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\driver\KEY-16.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 31 34 8 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 31 34 8 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\driver\lcd12864.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 2 5 32 33 35 73 65 72 71 70 74 69 38 30 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 5 32 33 35 73 72 71 70 74 69 38 30 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\moudle\tarsk.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 31 34 5 24 2 32 33 35 73 65 72 71 70 74 69 38 68 46 14 8 26 7 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 31 34 5 24 2 32 33 35 73 72 71 70 74 69 38 68 46 14 8 26 7 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mpu6050\inv_mpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 33 35 73 65 72 71 70 74 69 46 63 38 44 45 47 14 5 18 16 20 30 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 33 35 73 72 71 70 74 69 46 63 38 44 45 47 14 5 18 16 20 30 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mpu6050\mpu6050.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 16 5 20 30 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 5 20 30 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mpu6050\inv_mpu_dmp_motion_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 33 35 73 65 72 71 70 74 69 46 63 38 44 45 47 14 5 18 11 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 33 35 73 72 71 70 74 69 46 63 38 44 45 47 14 5 18 11 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mpu6050\mpu_iic.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 20 5 30 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 5 30 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\IIC.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 5 54 31 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 5 54 31 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\PWM.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 31 34 5 24 44 33 45 35 73 65 72 71 70 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 31 34 5 24 44 33 45 35 73 72 71 70 47</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\timerA.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 31 34 26 7 46 33 35 73 65 72 71 70 2 5 32 74 69 38 8 10 1 24 14</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 31 34 26 7 46 33 35 73 72 71 70 2 5 32 74 69 38 8 10 1 24 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 31 34 5 24 2 32 33 35 73 65 72 71 70 74 69 38 68 46 14 8 26 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 31 34 5 24 2 32 33 35 73 72 71 70 74 69 38 68 46 14 8 26 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\widnpendulum.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 50 29 40 53 58 60 80 77 42 61 62 43 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\widnpendulum.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 66 67 51 79 39 48 55 57 81 78 36 56 59 41 52 64</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
